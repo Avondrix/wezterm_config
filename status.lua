@@ -103,7 +103,7 @@ function M.enable()
 				cwd = cwd_uri:sub(slash)
 				-- table.insert(cells, cwd)
 				if hostname == "" then
-					table.insert(cells, "")
+					table.insert(cells, "")
 				elseif string.find(hostname, "arch") then
 					table.insert(cells, "")
 				else
