@@ -3,11 +3,11 @@ local act = wezterm.action
 local config = {}
 
 config.keys = {}
-for i = 1, 8 do
+for i = 1, 9 do
 	-- CTRL+ALT + number to activate that tab
 	table.insert(config.keys, {
 		key = tostring(i),
-		mods = "ALT",
+		mods = "CMD",
 		action = act.ActivateTab(i - 1),
 	})
 	-- F1 through F8 to activate that tab
@@ -15,6 +15,15 @@ for i = 1, 8 do
 	-- 	key = "F" .. tostring(i),
 	-- 	action = act.ActivateTab(i - 1),
 	-- })
+end
+
+for i = 1, 9 do
+	-- CTRL+ALT + number to activate that tab
+	table.insert(config.keys, {
+		key = tostring(i),
+		mods = "ALT",
+		action = act.MoveTab(i - 1),
+	})
 end
 
 table.insert(config.keys, {
