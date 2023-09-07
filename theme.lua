@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 
 local sync_with_system = false
 
-local dark_theme = "Everforest Dark (Gogh)"
+local dark_theme = "Eighties (dark) (terminal.sexy)"
 local light_theme = "Everforest Light (Gogh)"
 
 local function scheme_for_appearance(appearance)
